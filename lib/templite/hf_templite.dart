@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:catalogue_postes_radio/Services/hf_data_hundler.dart';
 import 'package:flutter/material.dart';
 import '../poste_radio_hf.dart';
@@ -29,57 +27,61 @@ class _HfTemplite extends State<HfTemplite> {
         ),
         centerTitle: true,
       ),
-      body: FutureBuilder(
+      body: Padding(
+        padding: EdgeInsets.all(8.0),
+      child: FutureBuilder(
         future: jsonServices(),
         builder: (context, data){
           if(data.hasError){
             return Center(child: Text("${data.error}"),);
           }
           else if(data.hasData){
-            var _items = data.data as List<PRHF>;
-            return ListView.builder(
-                itemCount: _items.length,
-                itemBuilder: (context,index) {
-                  return Card(
-                    margin: EdgeInsets.all(20),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                          child: Text(
-                              "${_items[index].model}",
-                          style: TextStyle(
-                            fontFamily: 'cocogoose_classic_extrabold',
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16.0,
-                            fontStyle: FontStyle.normal
-                          ),
-                          ),
-                        ),
-                        SizedBox(height: 10.0),
-                        Container(
-                          margin: EdgeInsets.all(10),
-                          child: Text(
-                            "${_items[index].description}",
-                            style: TextStyle(
-                              fontSize: 14.0,
-                              fontFamily: 'cocogoose_classic_extrabold',
-
-                            ),
-                          ),
+            var items = data.data as List<PRHF>;
+            return GridView.builder(
+                gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                  maxCrossAxisExtent: 200,
+                  crossAxisSpacing: 20,
+                  mainAxisSpacing: 20,
+                  childAspectRatio: 2/3
+                ),
+              itemCount: items.length,
+              itemBuilder: (context,index){
+                  return Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(15),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.3),
+                          spreadRadius: 2.0,
+                          blurRadius: 1.5,
+                          offset: Offset(0,3),
                         ),
                       ],
                     ),
+                    height: 150,
+                    width: 100,
+                    child: Padding(padding: EdgeInsets.symmetric(horizontal: 10.0),
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Image.asset("assets/hf_er_codan_sentry_h_1.png"),
+                        ),
+                        SizedBox(height: 10.0,),
+                        Text("${items[index].model}"),
+                      ],
+                    ),
+                    ),
                   );
-                    }
+              },
             );
           }
           else{
-            return Center(child: CircularProgressIndicator(),);
+            return const Center(child: CircularProgressIndicator(),);
           }
         },
       ),
+      )
     );
   }
 

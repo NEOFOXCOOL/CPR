@@ -75,12 +75,12 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: cocogoose_classic_extrabold
+    - family: RobotoLight
       fonts:
-        - asset: fonts/Cocogoose_Classic_ExtraBold.ttf
-    - family: cocogoose_classic_medium
+        - asset: fonts/Roboto-Light.ttf
+    - family: RobotoBold
       fonts:
-        - asset: fonts/Cocogoose_Classic_Medium.ttf
+        - asset: fonts/Roboto-Bold.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
