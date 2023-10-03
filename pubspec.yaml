@@ -75,12 +75,15 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: RobotoLight
+    - family: Robotolight
       fonts:
         - asset: fonts/Roboto-Light.ttf
-    - family: RobotoBold
+    - family: Robotobold
       fonts:
         - asset: fonts/Roboto-Bold.ttf
+    - family: Appicons
+      fonts:
+        - asset: icons/Appicons.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
