@@ -18,6 +18,11 @@ class _HfTemplite extends State<HfTemplite> {
       appBar: AppBar(
         elevation: 0.5,
         backgroundColor: Colors.white,
+        leading: IconButton(
+          onPressed: (){},
+          color: Colors.black54,
+          icon: Icon(Appicons.arrow_back),
+        ),
         title: const Text(
           "HF",
           style: TextStyle(
@@ -42,14 +47,17 @@ class _HfTemplite extends State<HfTemplite> {
                   children: [
                   Expanded(
                     flex: 1,
-                           child: Image.asset(
-                            "assets/hf_header_image.png",
-                             height: double.infinity,
-                             width: double.infinity,
-                           )
+                           child: Container(
+                             decoration: BoxDecoration(
+                               image: DecorationImage(
+                                 image: AssetImage("assets/hf_header_image.png"),
+                                 fit: BoxFit.cover
+                               ),
+                             ),
+                           ),
                       ),
 
-                  const Divider(height: 30,),
+                  const Divider(height: 20),
 
                   Expanded(
                       flex: 3,
@@ -91,7 +99,9 @@ class _HfTemplite extends State<HfTemplite> {
                                                     Expanded(
                                                     flex: 2,
                                                       child: Row(
+                                                        crossAxisAlignment: CrossAxisAlignment.center,
                                                       children: [
+                                                        SizedBox(width: 5,),
                                                           Expanded(
                                                             child:
                                                                Text(
@@ -122,17 +132,18 @@ class _HfTemplite extends State<HfTemplite> {
                                                      Expanded(
                                                         flex: 1,
                                                         child: Row(
+                                                          crossAxisAlignment: CrossAxisAlignment.center,
                                                           children: [
                                                              Expanded(
                                                                   child: IconButton(
                                                                       color: Colors.amber,
                                                                       onPressed: (){},
-                                                                        icon: const Icon(Appicons.bookmark_border,size: 20,)),),
+                                                                        icon: const Icon(Appicons.bookmark_border,size: 15,)),),
                                                               Expanded(
                                                                 child: IconButton(
-                                                                    color: Colors.black54,
+                                                                    color: Colors.amber,
                                                                     onPressed: (){},
-                                                                    icon: const Icon(Appicons.error)),
+                                                                    icon: const Icon(Appicons.error_outline, size: 15,),),
                                                               ),
                                                               ],
                                                             ),
