@@ -23,7 +23,6 @@ class Appicons {
   Appicons._();
 
   static const _kFontFam = 'Appicons';
-  static const String? _kFontPkg = null;
 
   static const IconData arrow_back = IconData(0xe800, fontFamily: _kFontFam);
   static const IconData bookmark = IconData(0xe801, fontFamily: _kFontFam);

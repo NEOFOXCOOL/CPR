@@ -4,7 +4,6 @@ import 'package:catalogue_postes_radio/poste_radio_hf.dart';
 import 'package:flutter/services.dart' as rootBundle;
 
 Future<List<PRHF>> jsonServices() async {
-  List _list = [];
   //read json file
   final jsondata = await rootBundle.rootBundle.loadString('data/fakeData.json');
   //decode json data as list
