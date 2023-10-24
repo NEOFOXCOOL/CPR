@@ -1,21 +1,24 @@
 import 'dart:math';
-
-import 'package:catalogue_postes_radio/Services/hf_data_hundler.dart';
 import 'package:catalogue_postes_radio/appicons_icons.dart';
 import 'package:flutter/material.dart';
 import '../poste_radio_hf.dart';
+import '../svc/data_hundler.dart';
 import 'Colors.dart';
 import 'CardView.dart';
 
 class HfTemplite extends StatefulWidget {
-  const HfTemplite({super.key});
+
+    const HfTemplite(
+        {super.key});
+
   @override
   State<HfTemplite> createState() => _HfTemplite();
 }
 
 class _HfTemplite extends State<HfTemplite> {
-  late PageController _pageController = PageController(initialPage: currentpage,viewportFraction: 0.8);
-  int currentpage = 0;
+
+  late int currentPage = 0;
+  late final PageController _pageController = PageController(initialPage: currentPage,viewportFraction: 0.8);
 
   @override
   void dispose() {
@@ -24,7 +27,7 @@ class _HfTemplite extends State<HfTemplite> {
   }
 
 
-  List<PRHF> items = [] ;
+  List<HF> items = [] ;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -103,16 +106,19 @@ class _HfTemplite extends State<HfTemplite> {
                         "postes".toUpperCase(),
                         style: TextStyle(
                           color: PaletteColors.TextColor.withOpacity(0.8),
-                          fontSize: 27,
-                          fontFamily: "Outline",
+                          fontSize: 35,
+                          fontFamily: "CaviarDreams",
                         ),
                       ),
                       Text(
                         "radio hf".toUpperCase(),
                         style: TextStyle(
                           color: PaletteColors.TextColor.withOpacity(0.8),
-                          fontSize: 40,
-                          fontFamily: "BebasNeue",
+                          fontSize: 23,
+                          fontWeight: FontWeight.bold,
+                          // fontFamily: "CaviarDreamsBold",
+                          fontFamily: "JumperBold",
+                          letterSpacing: 2
                         ),
                       )
                     ],
@@ -123,13 +129,14 @@ class _HfTemplite extends State<HfTemplite> {
           Expanded(
               flex: 3,
               child: FutureBuilder(
-                future: jsonServices(),
+                future: jsonServicesHF(),
                 builder: (context, data){
                   if(data.hasError){
                     return Center(child: Text("${data.error}"),);
                   }
                   else if(data.hasData){
-                    items = data.data as List<PRHF>;
+                    items = data.data as List<HF>;
+
                     return PageView.builder(
                       padEnds: true,
                         pageSnapping: true,
@@ -139,7 +146,7 @@ class _HfTemplite extends State<HfTemplite> {
                         itemCount: items.length,
                         itemBuilder: (context,index){
                           return Padding(
-                              padding: EdgeInsets.only(left: 10,right: 10),
+                              padding: const EdgeInsets.only(left: 10,right: 10),
                             child: CarouselView(index),
                           );
                         }
@@ -158,6 +165,7 @@ class _HfTemplite extends State<HfTemplite> {
   }
 
   Widget CarouselView(int index){
+
     return AnimatedBuilder(
         animation: _pageController,
         builder: (context,child){
@@ -168,13 +176,9 @@ class _HfTemplite extends State<HfTemplite> {
           }
           return Transform.rotate(
               angle: pi * value,
-            child: CatalogueCard(
-                items[index].images.toString(),
-                items[index].model.toString() ,
-                items[index].anneeAcquisition.toString()),
-
-          );
+            child: CatalogueCard(items[index]));
         }
     );
   }
+
 }

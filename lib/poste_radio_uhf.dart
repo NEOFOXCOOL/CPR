@@ -1,7 +1,7 @@
-class poste_radio_uhf{
-  int id;
+class UHF{
+
   String model;
-  List<String> images;
+  String images;
   String nationalite;
   String gammeFrequence;
   String modeUtilisation;
@@ -17,9 +17,8 @@ class poste_radio_uhf{
   String anneeAcquisition;
   String description;
 
-  poste_radio_uhf(
+  UHF(
       {
-        required this.id,
         required this.model,
         required this.images,
         required this.nationalite,

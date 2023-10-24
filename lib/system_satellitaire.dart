@@ -1,8 +1,7 @@
-class system_satellitaire{
-  int id;
+class SAT{
   String model;
+  String images;
   String description;
-  List<String> images;
   String dimensions;
   String poid;
   String taux_transfert_donnees;
@@ -14,8 +13,7 @@ class system_satellitaire{
   String certification;
   String interface_explorer_510;
 
-  system_satellitaire({
-    required this.id,
+  SAT({
     required this.model,
     required this.description,
     required this.images,

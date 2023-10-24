@@ -25,13 +25,13 @@ class _ParagraphState extends State<Paragraph> {
               child: Text(
                 widget.title.toUpperCase(),
                 style: TextStyle(
-                    color: PaletteColors.TextColor,
-                    fontSize: 18,
+                    color: PaletteColors.TextColor2,
+                    fontSize: 14,
                     fontWeight: FontWeight.bold
                 ),
               ),
             ),
-            SizedBox(height: 30,),
+            SizedBox(height: 10,),
             Align(
               alignment: Alignment.centerLeft,
               child: Text(

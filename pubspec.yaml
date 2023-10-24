@@ -32,7 +32,6 @@ dependencies:
     sdk: flutter
   circle_list: ^1.0.5
   flutter_svg: ^2.0.5
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
@@ -88,6 +87,21 @@ flutter:
     - family: Pointout
       fonts:
         - asset: "fonts/POINTOUT.TTF"
+    - family: CaviarDreamsBold
+      fonts:
+        - asset: "fonts/CaviarDreamsBold.ttf"
+    - family: CaviarDreams
+      fonts:
+        - asset: "fonts/CaviarDreams.ttf"
+    - family: Azonix
+      fonts:
+        - asset: "fonts/Azonix.otf"
+    - family: JumperBold
+      fonts:
+        - asset: "fonts/JumperBold.ttf"
+    - family: JumperLight
+      fonts:
+        - asset: "fonts/JumperLight.ttf"
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

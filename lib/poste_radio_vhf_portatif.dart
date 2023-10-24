@@ -1,15 +1,13 @@
-class poste_radio_vhf_nc{
+class VHFP{
 
-  int id;
-  List<String> images;
   String model;
+  String images;
   String nationalite;
   String gammeFrequence;
   String modeUtilisation;
   String modeTravail;
   String donnees;
   String puissance;
-  String securite;
   String espacementCP;
   String nbCanaux;
   String modulation;
@@ -17,9 +15,11 @@ class poste_radio_vhf_nc{
   String antenne;
   String anneeAcquisition;
   String description;
+  String consomation;
+  String temperature;
+  String securite;
 
-  poste_radio_vhf_nc({
-    required this.id,
+  VHFP({
     required this.model,
     required this.description,
     required this.alimentation,
@@ -35,8 +35,8 @@ class poste_radio_vhf_nc{
     required this.nationalite,
     required this.nbCanaux,
     required this.puissance,
+    required this.consomation,
+    required this.temperature,
     required this.securite
   });
-
-
 }

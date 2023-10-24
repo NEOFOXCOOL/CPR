@@ -7,4 +7,5 @@ class PaletteColors{
   static const Color FortColor = Color(0xFF38abec);
   static const Color Bagckround = Color(0xFFFFFFFF);
   static const Color TextColor = Color(0xFFFFFFFF);
+  static const Color TextColor2 = Color(0xFFF4CE14);
 }
