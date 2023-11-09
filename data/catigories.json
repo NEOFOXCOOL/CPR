@@ -1,0 +1,37 @@
+[
+  {
+    "title" : "poste radio",
+    "type" : "hf",
+    "sup_type" : "",
+    "image" : "assets/hf_bagckround.png",
+    "content" : 16.0
+  },
+  {
+    "title" : "poste radio",
+    "type" : "uhf",
+    "sup_type" : "",
+    "image" : "assets/uhf_bagckround.png",
+    "content" : 10.0
+  },
+  {
+    "title" : "poste radio",
+    "type" : "vhf",
+    "sup_type" : "compagnie",
+    "image" : "assets/vhfc_bagckround.png",
+    "content" : 24.0
+  },
+  {
+    "title" : "poste radio",
+    "type" : "vhf",
+    "sup_type" : "portatif",
+    "image" : "assets/vhfp_bagckround.png",
+    "content" : 14.0
+  },
+  {
+    "title" : "Système",
+    "type" : "Satellitaire",
+    "sup_type" : "",
+    "image" : "assets/sat_bagckround.png",
+    "content" : 4.0
+  }
+]

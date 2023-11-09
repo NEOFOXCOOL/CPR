@@ -1,0 +1,104 @@
+[
+  {
+    "hf": [
+      {
+        "model": "E/R CODAN SENTRY-H",
+        "images": ["assets/hf_er_codan_sentry_h_2.png","assets/hf_er_codan_sentry_h_2.png"],
+        "nationalite": "CODAN / Australienne",
+        "securite": "- AES-256 (256 clés, entrée directe et programmable via KMS/KFS et clé USB Codan): voix et data\n- CES-128 (97 x clés à 16 chiffres, entrée directe et programmable via KMS/KFS et clé USB Codan, code PIN de session à 4 chiffres): voix",
+        "gammeFrequence": "",
+        "modeUtilisation": "- Station fixe\n- Station mobile",
+        "modeTravail": "FF - FD- ALE 3G -  saut de fréquence 6/12/25 sauts par seconde synchronisation par GPS",
+        "donnees": "- TD via logiciel sprint chat\n- MIL-STD-188-110A/B avec débits de données pouvant atteindre 19,2 kbps\n- GPS : RFU - antenne externe, combiné 2320 - récepteur / antenne intégrés (GPS, GLONASS et Beidou)",
+        "puissance": "Programmable par l'utilisateur par incréments de 1 W (faible/moyen/ élevé) et peut atteindre 150W",
+        "espacementCanaux":"10Hz",
+        "nombrecanaux": "1000",
+        "modulation": "AM-USB-LSB-USBW-LSBW-CW",
+        "Alimantation": "de 10 à 30 V DC",
+        "antenne": "- Antenne tactique large bande\n- Antenne wiskey NVIS",
+        "anneeAcquisition": "2020",
+        "description": "Le poste radio CODAN SENTRY -H6120-BM 150 W est un E/R HF SDR (software defined radio), de nouvelle génération, de nationalité australienne, avec une puissance allant jusqu’à 150 W PEP sans amplificateur externe. Il est employé pour assurer des liaisons radio à l’échelon des grandes unités"
+      }
+    ],
+    "vhfc": [
+      {
+        "model": "E/R CODAN SENTRY-H",
+        "images": ["assets/hf_er_codan_sentry_h_2.png","assets/hf_er_codan_sentry_h_2.png"],
+        "nationalite": "CODAN / Australienne",
+        "securite": "- AES-256 (256 clés, entrée directe et programmable via KMS/KFS et clé USB Codan): voix et data\n- CES-128 (97 x clés à 16 chiffres, entrée directe et programmable via KMS/KFS et clé USB Codan, code PIN de session à 4 chiffres): voix",
+        "gammeFrequence": "",
+        "modeUtilisation": "- Station fixe\n- Station mobile",
+        "modeTravail": "FF - FD- ALE 3G -  saut de fréquence 6/12/25 sauts par seconde synchronisation par GPS",
+        "donnees": "- TD via logiciel sprint chat\n- MIL-STD-188-110A/B avec débits de données pouvant atteindre 19,2 kbps\n- GPS : RFU - antenne externe, combiné 2320 - récepteur / antenne intégrés (GPS, GLONASS et Beidou)",
+        "puissance": "Programmable par l'utilisateur par incréments de 1 W (faible/moyen/ élevé) et peut atteindre 150W",
+        "espacementCanaux":"10Hz",
+        "nombrecanaux": "1000",
+        "modulation": "AM-USB-LSB-USBW-LSBW-CW",
+        "Alimantation": "de 10 à 30 V DC",
+        "antenne": "- Antenne tactique large bande\n- Antenne wiskey NVIS",
+        "anneeAcquisition": "2020",
+        "description": "Le poste radio CODAN SENTRY -H6120-BM 150 W est un E/R HF SDR (software defined radio), de nouvelle génération, de nationalité australienne, avec une puissance allant jusqu’à 150 W PEP sans amplificateur externe. Il est employé pour assurer des liaisons radio à l’échelon des grandes unités"
+      }
+    ],
+    "vhfp": [
+      {
+        "model": "E/R CODAN SENTRY-H",
+        "images": ["assets/hf_er_codan_sentry_h_2.png","assets/hf_er_codan_sentry_h_2.png"],
+        "nationalite": "CODAN / Australienne",
+        "securite": "- AES-256 (256 clés, entrée directe et programmable via KMS/KFS et clé USB Codan): voix et data\n- CES-128 (97 x clés à 16 chiffres, entrée directe et programmable via KMS/KFS et clé USB Codan, code PIN de session à 4 chiffres): voix",
+        "gammeFrequence": "",
+        "modeUtilisation": "- Station fixe\n- Station mobile",
+        "modeTravail": "FF - FD- ALE 3G -  saut de fréquence 6/12/25 sauts par seconde synchronisation par GPS",
+        "donnees": "- TD via logiciel sprint chat\n- MIL-STD-188-110A/B avec débits de données pouvant atteindre 19,2 kbps\n- GPS : RFU - antenne externe, combiné 2320 - récepteur / antenne intégrés (GPS, GLONASS et Beidou)",
+        "puissance": "Programmable par l'utilisateur par incréments de 1 W (faible/moyen/ élevé) et peut atteindre 150W",
+        "espacementCanaux":"10Hz",
+        "nombrecanaux": "1000",
+        "modulation": "AM-USB-LSB-USBW-LSBW-CW",
+        "Alimantation": "de 10 à 30 V DC",
+        "antenne": "- Antenne tactique large bande\n- Antenne wiskey NVIS",
+        "anneeAcquisition": "2020",
+        "description": "Le poste radio CODAN SENTRY -H6120-BM 150 W est un E/R HF SDR (software defined radio), de nouvelle génération, de nationalité australienne, avec une puissance allant jusqu’à 150 W PEP sans amplificateur externe. Il est employé pour assurer des liaisons radio à l’échelon des grandes unités"
+      }
+    ],
+    "uhf": [
+      {
+        "model": "E/R CODAN SENTRY-H",
+        "images": ["assets/hf_er_codan_sentry_h_2.png","assets/hf_er_codan_sentry_h_2.png"],
+        "nationalite": "CODAN / Australienne",
+        "securite": "- AES-256 (256 clés, entrée directe et programmable via KMS/KFS et clé USB Codan): voix et data\n- CES-128 (97 x clés à 16 chiffres, entrée directe et programmable via KMS/KFS et clé USB Codan, code PIN de session à 4 chiffres): voix",
+        "gammeFrequence": "",
+        "modeUtilisation": "- Station fixe\n- Station mobile",
+        "modeTravail": "FF - FD- ALE 3G -  saut de fréquence 6/12/25 sauts par seconde synchronisation par GPS",
+        "donnees": "- TD via logiciel sprint chat\n- MIL-STD-188-110A/B avec débits de données pouvant atteindre 19,2 kbps\n- GPS : RFU - antenne externe, combiné 2320 - récepteur / antenne intégrés (GPS, GLONASS et Beidou)",
+        "puissance": "Programmable par l'utilisateur par incréments de 1 W (faible/moyen/ élevé) et peut atteindre 150W",
+        "espacementCanaux":"10Hz",
+        "nombrecanaux": "1000",
+        "modulation": "AM-USB-LSB-USBW-LSBW-CW",
+        "Alimantation": "de 10 à 30 V DC",
+        "antenne": "- Antenne tactique large bande\n- Antenne wiskey NVIS",
+        "anneeAcquisition": "2020",
+        "description": "Le poste radio CODAN SENTRY -H6120-BM 150 W est un E/R HF SDR (software defined radio), de nouvelle génération, de nationalité australienne, avec une puissance allant jusqu’à 150 W PEP sans amplificateur externe. Il est employé pour assurer des liaisons radio à l’échelon des grandes unités"
+      }
+    ],
+    "sat": [
+      {
+        "model": "E/R CODAN SENTRY-H",
+        "images": ["assets/hf_er_codan_sentry_h_2.png","assets/hf_er_codan_sentry_h_2.png"],
+        "nationalite": "CODAN / Australienne",
+        "securite": "- AES-256 (256 clés, entrée directe et programmable via KMS/KFS et clé USB Codan): voix et data\n- CES-128 (97 x clés à 16 chiffres, entrée directe et programmable via KMS/KFS et clé USB Codan, code PIN de session à 4 chiffres): voix",
+        "gammeFrequence": "",
+        "modeUtilisation": "- Station fixe\n- Station mobile",
+        "modeTravail": "FF - FD- ALE 3G -  saut de fréquence 6/12/25 sauts par seconde synchronisation par GPS",
+        "donnees": "- TD via logiciel sprint chat\n- MIL-STD-188-110A/B avec débits de données pouvant atteindre 19,2 kbps\n- GPS : RFU - antenne externe, combiné 2320 - récepteur / antenne intégrés (GPS, GLONASS et Beidou)",
+        "puissance": "Programmable par l'utilisateur par incréments de 1 W (faible/moyen/ élevé) et peut atteindre 150W",
+        "espacementCanaux":"10Hz",
+        "nombrecanaux": "1000",
+        "modulation": "AM-USB-LSB-USBW-LSBW-CW",
+        "Alimantation": "de 10 à 30 V DC",
+        "antenne": "- Antenne tactique large bande\n- Antenne wiskey NVIS",
+        "anneeAcquisition": "2020",
+        "description": "Le poste radio CODAN SENTRY -H6120-BM 150 W est un E/R HF SDR (software defined radio), de nouvelle génération, de nationalité australienne, avec une puissance allant jusqu’à 150 W PEP sans amplificateur externe. Il est employé pour assurer des liaisons radio à l’échelon des grandes unités"
+      }
+    ]
+  }
+]

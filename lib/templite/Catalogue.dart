@@ -1,9 +1,10 @@
 import 'dart:math';
-import 'package:catalogue_postes_radio/templite/Paragraph.dart';
+import 'dart:ui';
+import 'package:catalogue_postes_radio/class/p_ricons_icons.dart';
 import 'package:flutter/material.dart';
-import '../appicons_icons.dart';
-import '../poste_radio_hf.dart';
-import 'Colors.dart';
+import '../class/poste_radio_hf.dart';
+import '../class/Colors.dart';
+import '../component/Paragraph.dart';
 
 class Catalogue extends StatefulWidget {
   final HF hf;
@@ -17,7 +18,6 @@ class _CatalogueState extends State<Catalogue> {
 
   late final PageController _pageController = PageController(initialPage: currentpage,viewportFraction: 0.8);
   int currentpage = 0;
-
   @override
   void dispose() {
     super.dispose();
@@ -33,8 +33,8 @@ class _CatalogueState extends State<Catalogue> {
               begin: Alignment.bottomRight,
               end: Alignment.topLeft,
               colors: [
-                PaletteColors.PrimaryColor,
-                PaletteColors.SecondryColor
+                PaletteColors.mainColor,
+                PaletteColors.secondryColor
               ]
           ),
         ),
@@ -72,13 +72,13 @@ class _CatalogueState extends State<Catalogue> {
                                   begin: Alignment.bottomRight,
                                   end: Alignment.topLeft,
                                   colors: [
-                                    PaletteColors.PrimaryColor,
-                                    PaletteColors.SecondryColor
+                                    PaletteColors.mainColor,
+                                    PaletteColors.secondryColor
                                   ]
                               ),
                               boxShadow: [
                                 BoxShadow(
-                                    color: PaletteColors.PrimaryColor.withOpacity(0.8),
+                                    color: PaletteColors.mainColor.withOpacity(0.8),
                                     blurRadius: 15,
                                     spreadRadius: 0.1,
                                     offset: const Offset(
@@ -101,7 +101,7 @@ class _CatalogueState extends State<Catalogue> {
                                 Navigator.pop(context);
                               },
                               icon: Icon(
-                                Appicons.arrow_back,
+                                PRicons.left_open,
                                 color: Colors.white.withOpacity(1),
                               )
                           ),
@@ -111,7 +111,7 @@ class _CatalogueState extends State<Catalogue> {
                   Padding(
                     padding: const EdgeInsets.all(0),
                     child: SizedBox(
-                      height: 300,width: double.maxFinite,
+                      height: 250,width: double.maxFinite,
                       child: PageView.builder(
                           padEnds: true,
                           pageSnapping: true,
@@ -139,12 +139,12 @@ class _CatalogueState extends State<Catalogue> {
                           style: TextStyle(
                               fontFamily: "CaviarDreams",
                               fontSize: 24,
-                              color: PaletteColors.TextColor2,
+                              color: PaletteColors.iconsColor,
                               shadows: [
                                 Shadow(
                                     offset: const Offset(2,0),
                                     blurRadius: 15,
-                                    color: PaletteColors.PrimaryColor.withOpacity(0.5)
+                                    color: PaletteColors.mainColor.withOpacity(0.5)
                                 )
                               ]
                           ),
@@ -158,12 +158,12 @@ class _CatalogueState extends State<Catalogue> {
                           style: TextStyle(
                               fontFamily: "BebasNeue",
                               fontSize: 40,
-                              color: PaletteColors.TextColor,
+                              color: PaletteColors.iconsColor,
                               shadows: [
                                 Shadow(
                                     offset: const Offset(2,0),
                                     blurRadius: 15,
-                                    color: PaletteColors.PrimaryColor.withOpacity(0.5)
+                                    color: PaletteColors.mainColor.withOpacity(0.5)
                                 )
                               ]
                           ),
